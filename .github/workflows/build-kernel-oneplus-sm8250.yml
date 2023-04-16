@@ -1,4 +1,4 @@
-name: Build Kernel
+name: Build Kernel OnePlus SM8250
 on:
   watch:
     types: [started]
