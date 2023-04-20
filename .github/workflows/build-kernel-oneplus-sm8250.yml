@@ -2,11 +2,10 @@ name: Build Kernel OnePlus SM8250
 on:
   watch:
     types: [started]
-
-  workflow_dispatch:
-
   schedule:
     - cron: '0 0 * * 0'
+    
+  workflow_dispatch:
 
 jobs:
   build:
