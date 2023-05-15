@@ -1,5 +1,11 @@
 **中文** | [English](README_EN.md)
 
+# 提醒
+
+你可以Fork这个项目，然后做你自己的Actions
+目前我已将我当前使用的`env`改为了PixelExperiencePlus的内核，请根据实际需要修改你自己的`.env`文件
+`config.env` 是原版模板，`config_oplus_sm8250.env` 随时会变动，请不要直接跟随最新branch，使用前请一定要注意，我的推荐是像我这样子单独开一个`workflow`和`.env`文件用于跑Actions
+
 # KernelSU Action
 
 用于 Non-GKI Kernel 的 Action，具有一定的普遍性，需要了解内核及 Android 的相关知识得以运用。
