@@ -280,19 +280,19 @@ jobs:
       if: env.CHECK_FILE_IS_OK == 'true'
       uses: actions/upload-artifact@v3
       with:
-        name: Nameless${{ env.UPLOADNAME }}-${{ env.BUILD_TIME }}
+        name: AnyKernel3${{ env.UPLOADNAME }}-Nameless-OnePlus-SM8250-${{ env.BUILD_TIME }}
         path: kernel_workspace/AnyKernel3/*
 
     - name: Upload DTBO image
       if: env.CHECK_DTBO_IS_OK == 'true'
       uses: actions/upload-artifact@v3
       with:
-        name: dtbo-${{ env.DEVICE }}-${{ env.BUILD_TIME }}
+        name: dtbo${{ env.UPLOADNAME }}-Nameless-OnePlus-SM8250-${{ env.BUILD_TIME }}
         path: kernel_workspace/android-kernel/out/arch/${{ env.ARCH }}/boot/dtbo.img
 
     - name: Upload boot image
       if: env.MAKE_BOOT_IMAGE_IS_OK == 'true'
       uses: actions/upload-artifact@v3
       with:
-        name: boot${{ env.UPLOADNAME }}-${{ env.DEVICE }}-${{ env.BUILD_TIME }}
+        name: boot${{ env.UPLOADNAME }}-Nameless-OnePlus-SM8250-${{ env.BUILD_TIME }}
         path: kernel_workspace/boot.img
