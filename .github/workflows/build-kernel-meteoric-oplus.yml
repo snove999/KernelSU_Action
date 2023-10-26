@@ -1,4 +1,4 @@
-name: Build Kernel meteoric OnePlus 8 Pro
+name: Build Kernel Meteoric OnePlus 8 Pro
 on:
   watch:
     types: [started]
