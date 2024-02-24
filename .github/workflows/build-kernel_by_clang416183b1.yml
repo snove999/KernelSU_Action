@@ -3,6 +3,9 @@ on:
   watch:
     types: [started]
 
+  schedule:
+    - cron: '01 17 * * *'
+
   workflow_dispatch:
 
 jobs:
